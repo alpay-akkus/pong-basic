@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+    <head>
+        <title>pong</title>
+        <link rel="stylesheet" type="text/css" href="css/general_style_pong.css"/>
+        <link rel="stylesheet" type="text/css" href="css/custom_style_pong.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="script/interact.js"></script>
+        
+    </head>
+    
+    <body>
+        <main>
+ <!-- intro section -->           
+            <section id="intro">
+                <h2>Pong</h2>
+                <a href="#start">Start</a>
+            </section>
+ <!-- start section -->            
+            <section id="start">
+                <h2>Start</h2>
+                <nav>
+                    <h2>menu</h2>
+                    <ul>
+                        <li><a href="#game">1 speler</a></li>
+                        <li><a href="#game">2 speler</a></li>
+                        <li><a href="#instructions">Instructies</a></li>
+                        <li><a href="#settings">Instellingen</a></li>
+                        <li><a href="#scores">Scores</a></li>
+                    </ul>
+                </nav>
+            </section>
+ <!-- game section -->            
+            <section id="game">
+                <h2>Pong</h2>
+                <div id="pongGame">
+                    <div class="player draggable" id="player1" data-y="0"></div>
+                    <div class="player draggable" id="player2" data-y="0"></div>
+                    <div id="ball"></div>
+                    <h2 class="score" id="score1">0</h2>
+                    <h2 class="score" id="score2">0</h2>
+                    <h2 id="spelduur">30</h2>
+                </div>
+                <nav>
+                    <h2>menu</h2>
+                    <div id="opslaan">
+                        <h3>je score is:</h3>
+                        <a href="scores">Opslaan</a>
+                    </div>
+                    
+                    <ul>
+                        <li><a href="#start">Start</a></li>
+                        <li><a href="#instructions">Instructie</a></li>
+                        <li><a href="#settings">Instellingen</a></li>
+                        <li><a href="#scores">Scores</a></li>
+                        <li><a href="#game">Speel verder</a></li>
+                        
+                    </ul>
+                </nav>
+            </section>
+<!-- settings section -->             
+            <section id="settings">
+                <h2>Instellingen</h2>
+                <p>speeltijd</p>
+                <ul>
+                    <li>2 minuten</li>
+                    <li>1 minuut</li>
+                    <li>30 seconden</li>
+                </ul>
+                <nav>
+                    <h2>menu</h2>
+                    <ul>
+                        <li><a href="#start">Start</a></li>
+                        <li><a href="#game">Speel verder</a></li>
+                    </ul>
+                </nav>
+            </section>
+<!-- scores section -->             
+            <section id="scores">
+                <h2>Scores</h2>
+                <ul id="playerList">
+                    <!-- spelers laden met js-->
+                </ul>
+                <ul id="scoreList">
+                    <!-- score laden met js-->
+                </ul>
+                <nav>
+                    <h2>menu</h2>
+                    <ul>
+                        <li><a href="#start">Start</a></li>
+                        <li><a href="#game">Speel verder</a></li>
+                    </ul>
+                </nav>
+            </section>  
+<!-- instructions section -->          
+            <section id="instructions">
+                <h2>Instructies</h2>
+                <ol>
+                    <li>.....</li>
+                    <li>.....</li>
+                    <li>.....</li>
+                    <li>.....</li>
+                </ol>
+                
+                <nav>
+                    <ul>
+                        <li><a href="#start">Start</a></li>
+                        <li><a href="#game">Speel verder</a></li>
+                    </ul>
+                </nav>
+            </section>  
+        </main>
+        <script src="script/script_pong.js"></script>
+        <script src="script/script_general_pong.js"></script>
+    </body>
+</html>
