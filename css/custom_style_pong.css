@@ -1,0 +1,8 @@
+/*Schrijf hier je css om je eigen ontwerp toe te passen op het spel*/
+
+main
+{
+    background-image: url(../img/Deltion_college-totaal.jpg) no-repeat;
+    background-size: cover;
+    background-origin: center center;
+}
